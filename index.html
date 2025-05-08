@@ -48,6 +48,8 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
       gap: 2rem;
       animation: fadeIn 0.8s ease-in-out;
@@ -92,9 +94,62 @@
       margin-bottom: 0.5rem;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .skills-section, .projects-section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-section h3,
+    .projects-section h3 {
+      color: #4f46e5;
+      margin-bottom: 1rem;
+    }
+
+    .skill {
+      margin-bottom: 1rem;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    .skill-bar {
+      height: 10px;
+      border-radius: 5px;
+      background-color: #d1d5db;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      background-color: #4f46e5;
+      border-radius: 5px;
+      width: 0;
+      animation: fillBar 2s forwards;
+    }
+
+    @keyframes fillBar {
+      from { width: 0; }
+      to { width: var(--fill-width); }
+    }
+
+    .project {
+      margin-bottom: 1rem;
+    }
+
+    .project h4 {
+      margin: 0.3rem 0;
+      color: #1e3a8a;
+    }
+
+    .project p {
+      color: #444;
     }
 
     footer {
@@ -104,33 +159,46 @@
       background-color: #e0e7ff;
       color: #333;
     }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-img {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+
+      .about-text {
+        flex: none;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to My E-Portfolio</h1>
+    <h1>My E-Portfolio</h1>
   </header>
 
   <nav>
     <a href="index.html">About Me</a>
-    <a href="modules.html">Modules&Takeaways</a>
-    <a href="videos.html">Videos</a> <!-- 🔥 New -->
+    <a href="modules.html">Modules & Takeaways</a>
+    <a href="videos.html">Videos</a>
     <a href="contact.html">Contact</a>
   </nav>
+
   <div class="about-container">
     <div class="profile-img">
       <img src="rohit.jpg" alt="My Profile Photo">
-      <!-- Replace with your actual image path -->
     </div>
     <div class="about-text">
       <h2>Hello, I'm Rohit Singh</h2>
       <p>
-        Hello! I'm Rohit Singh, a passionate 2nd-year student at Graphic Era Hill University. My journey into the world of technology started with a curiosity for how machines can think and learn, leading me to dive deep into Machine Learning (ML), Artificial Intelligence (AI), and Generative AI.
-
-I am constantly exploring innovative ways in which AI can transform industries, especially in areas like predictive analytics, generative tools, and smart automation. Throughout my academic journey, I have had the opportunity to work on several projects, ranging from heart disease prediction models to AI-driven traffic systems and real-time bus tracking systems.
-
-I'm always eager to expand my knowledge and apply it in practical scenarios, whether it's through hands-on projects or collaborating with like-minded peers. I am particularly focused on developing high-performance models from scratch, exploring new techniques, and understanding how AI can solve complex real-world problems
+        I'm a 2nd-year B.Tech student at Graphic Era Hill University, deeply interested in ML, AI, and Generative AI. I'm passionate about building intelligent systems that solve real-world problems like disease prediction, traffic automation, and real-time tracking.
       </p>
       <div class="highlights">
         <h3>Key Strengths:</h3>
@@ -142,5 +210,46 @@ I'm always eager to expand my knowledge and apply it in practical scenarios, whe
       </div>
     </div>
   </div>
+
+  <div class="skills-section">
+    <h3>Technical Skills</h3>
+    <div class="skill">
+      <div class="skill-name">C/C++</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 85%;"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Machine Learning</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 80%;"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Web Development</div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="--fill-width: 75%;"></div></div>
+    </div>
+  </div>
+
+  <div class="projects-section">
+    <h3>Projects</h3>
+    <div class="project">
+      <h4>Heart Disease Prediction System</h4>
+      <p>Used decision trees and machine learning to accurately predict heart disease risks.</p>
+    </div>
+    <div class="project">
+      <h4>Real-Time Bus Tracking System</h4>
+      <p>Developed a Firebase-powered web app for live location tracking of college buses.</p>
+    </div>
+    <div class="project">
+      <h4>AI-Based Adaptive Traffic Control</h4>
+      <p>Built a dynamic traffic light system using real-time data to reduce congestion.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Rohit Singh | All Rights Reserved
+  </footer>
+
 </body>
 </html>
