@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modules – E-Portfolio</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #0b3d91;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      text-decoration: underline;
+      color: #ffde59;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .collapsible {
+      background-color: #e1ecf4;
+      color: #0b3d91;
+      cursor: pointer;
+      padding: 15px 20px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .collapsible:hover {
+      background-color: #cbdff2;
+    }
+
+    .active {
+      background-color: #d5e8f6;
+    }
+
+    .content {
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 5px solid #0b3d91;
+      border-radius: 4px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out;
+    }
+
+    .content ul, .content ol {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0b3d91;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>📚 Modules</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="modules.html" class="active">Modules&Takeaways</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Week 1 -->
+    <button class="collapsible">🔹 Week 1 – Career Development & Self-Awareness</button>
+    <div class="content">
+      <h3>Theme: Create Your Own Career Canvas – Strategic Planning & Self-Discovery</h3>
+      <h4>📌 Soft Skills to Cultivate:</h4>
+      <ul>
+        <li>🗣 Communication Skills</li>
+        <li>⏱ Work Ethic (Punctuality & Focus)</li>
+        <li>🙆‍♂ Positive Body Language</li>
+        <li>🤔 Thought Clarity Before Speaking</li>
+        <li>👂 Active Listening</li>
+        <li>✋ Meaningful Gestures</li>
+      </ul>
+      <h4>📚 Key Takeaways:</h4>
+      <ul>
+        <li><strong>🔍 Self-Awareness & Potential:</strong> Understood strengths, habits, and areas for growth.</li>
+        <li><strong>🎯 Goal Setting:</strong> Set realistic academic and personal goals.</li>
+        <li><strong>💬 Gaining Confidence:</strong> Delivered short talks and improved stage confidence.</li>
+        <li><strong>🛠 Portfolio Development:</strong> Learned about digital portfolios as personal branding tools.</li>
+        <li><strong>🧠 Active Learning:</strong> Started applying feedback and refining soft skills.</li>
+      </ul>
+      <p><strong>📝 Reflection:</strong> “This week helped me better understand myself and kickstart my professional journey with clarity.”</p>
+    </div>
+
+    <!-- Week 2 -->
+    <button class="collapsible">🌱 Week 2 – SWOC Analysis</button>
+    <div class="content">
+      <h3>Theme: Understanding Myself Better Through SWOC Analysis</h3>
+      <h4>🔹 Key Takeaways:</h4>
+      <ul>
+        <li><strong>✅ Strengths:</strong> Identified consistency, positivity, and personal strengths.</li>
+        <li><strong>❌ Weaknesses:</strong> Recognized areas like communication and vocabulary improvement.</li>
+        <li><strong>🌟 Opportunities:</strong> Utilized college activities, trainings, and GDs.</li>
+        <li><strong>⚠ Challenges:</strong> Understood stage fear, time balance, and tackled them with positivity.</li>
+      </ul>
+      <p><strong>💡 Reflection:</strong> “The SWOC framework gave me a structured way to analyze and improve myself holistically.”</p>
+    </div>
+
+    <!-- Week 3 -->
+    <button class="collapsible">📘 Week 3 – Mastering Presentation Skills</button>
+    <div class="content">
+      <h3>Theme: Communicating Effectively with Confidence and Clarity</h3>
+      <h4>🎯 Key Learnings:</h4>
+      <ol>
+        <li><strong>Purpose & Audience:</strong> Tailoring content to match audience expectations.</li>
+        <li><strong>Structured Delivery:</strong> Engaging all learning styles: visual, auditory, kinesthetic.</li>
+        <li><strong>Confident Speaking:</strong> Used gestures, tone, and clarity to maintain engagement.</li>
+        <li><strong>Storytelling:</strong> Integrated stories to improve message retention.</li>
+      </ol>
+      <p><strong>📝 Reflection:</strong> “Presenting with confidence is about clarity, connection, and structure. I now feel more equipped to deliver ideas meaningfully.”</p>
+    </div>
+
+    <!-- Week 4 -->
+    <button class="collapsible">🖊 Week 4 – Effective Writing Skills</button>
+    <div class="content">
+      <h3>Theme: Writing Clearly, Concisely, and Precisely for Professional Impact</h3>
+      <h4>🖊 Key Learnings:</h4>
+      <ol>
+        <li><strong>Audience Awareness:</strong> Matched tone to organizational and audience expectations.</li>
+        <li><strong>Clarity:</strong> Used direct and simple language to convey key points.</li>
+        <li><strong>Brevity:</strong> Removed unnecessary filler and repetitive phrasing.</li>
+        <li><strong>Precision:</strong> Applied specific, technical vocabulary appropriately.</li>
+      </ol>
+      <p><strong>📝 Reflection:</strong> “Clear, brief, and precise writing builds strong professional communication that’s easy to understand and impactful.”</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rohit Singh | B.Tech GEHU</p>
+  </footer>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

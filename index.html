@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - E-Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6fb;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #4f46e5;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 1.2rem;
+      text-decoration: none;
+      color: #4f46e5;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1e3a8a;
+      transform: scale(1.1);
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .profile-img {
+      flex: 1;
+      max-width: 250px;
+    }
+
+    .profile-img img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 2;
+    }
+
+    .about-text h2 {
+      color: #4f46e5;
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .highlights {
+      margin-top: 1.5rem;
+    }
+
+    .highlights ul {
+      padding-left: 1.2rem;
+      color: #1e3a8a;
+    }
+
+    .highlights ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background-color: #e0e7ff;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My E-Portfolio</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">About Me</a>
+    <a href="modules.html">Modules&Takeaways</a>
+    <a href="videos.html">Videos</a> <!-- 🔥 New -->
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="about-container">
+    <div class="profile-img">
+      <img src="rohit.jpg" alt="My Profile Photo">
+      <!-- Replace with your actual image path -->
+    </div>
+    <div class="about-text">
+      <h2>Hello, I'm Rohit Singh</h2>
+      <p>
+        Hello! I'm Rohit Singh, a passionate 2nd-year student at Graphic Era Hill University. My journey into the world of technology started with a curiosity for how machines can think and learn, leading me to dive deep into Machine Learning (ML), Artificial Intelligence (AI), and Generative AI.
+
+I am constantly exploring innovative ways in which AI can transform industries, especially in areas like predictive analytics, generative tools, and smart automation. Throughout my academic journey, I have had the opportunity to work on several projects, ranging from heart disease prediction models to AI-driven traffic systems and real-time bus tracking systems.
+
+I'm always eager to expand my knowledge and apply it in practical scenarios, whether it's through hands-on projects or collaborating with like-minded peers. I am particularly focused on developing high-performance models from scratch, exploring new techniques, and understanding how AI can solve complex real-world problems
+      </p>
+      <div class="highlights">
+        <h3>Key Strengths:</h3>
+        <ul>
+          <li>Teamwork, leadership, and time management</li>
+          <li>Positive mindset and goal-driven attitude</li>
+          <li>Problem-solving and critical thinking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
